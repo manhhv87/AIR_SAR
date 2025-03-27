@@ -106,12 +106,12 @@ Once everything is set up (installation and asset downloads), you might wanna tr
 
 ### SAR-APD video detection with image output
 - In the project root, run the command: `/bin/bash convert-model.sh`
-- Then start the inferencing by running: `/usr/bin/python3 video_detect.py -c mob_cpu_images`
+- Then start the inferencing by running: `python video_detect.py -c mob_cpu_images`
 - Check `data/videos/Ylojarvi-gridiajo-two-guys-moving_air_output/` folder for the output images
 
 ### SAR-APD video detection with video output
 - In the project root, run the command: `/bin/bash convert-model.sh`
-- Then start the inferencing by running: `/usr/bin/python3 video_detect.py -c mob_gpu_tracking`
+- Then start the inferencing by running: `python video_detect.py -c mob_gpu_tracking`
 - Check `data/videos/Ylojarvi-gridiajo-two-guys-moving_air_output_compressed.mov` output video
 
 ## Wandb support
