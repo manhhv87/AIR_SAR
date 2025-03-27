@@ -82,14 +82,14 @@ If using native installation:
 
 ## Quick native install instructions 
 - Clone this repo 
-- To build the AIR project for CPU, run the command: `/usr/bin/python3 -m pip install air-detector[cpu]`
-- To build the AIR project for GPU, run the command: `/usr/bin/python3 -m pip install air-detector[gpu]`
+- To build the AIR project for CPU, run the command: `python -m pip install air-detector[cpu]`
+- To build the AIR project for GPU, run the command: `python -m pip install air-detector[gpu]`
 
 ## Download data and the trained model
 - Save the [demo image folder](https://zenodo.org/record/5662638) under `data/images`
 - Save the [demo videos](https://zenodo.org/record/5662512) under `data/videos`
 - Save the [trained model](https://zenodo.org/record/5662168) in `models/` folder
-    - In the project root, convert the training model to inference model by running: `/bin/bash convert-model.sh`
+    - In the project root, convert the training model to inference model by running: `bash convert-model.sh`
 - Optionally, you can download and extract [the whole HERIDAL dataset in keras-retinanet format](https://zenodo.org/record/5662351) to `data/datasets`
 
 ## Quick demos
