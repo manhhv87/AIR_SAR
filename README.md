@@ -97,7 +97,7 @@ If using native installation:
 Once everything is set up (installation and asset downloads), you might wanna try out these cool and simple demos to get the hang of using the AIR detector.
 
 ### Running inference on HERIDAL test image folder
-- In the project root, run the command: `/bin/bash infer.sh`
+- In the project root, run the command: `bash infer.sh`
 - Check `data/predictions/dauntless-sweep-2_resnet152_pascal-enclose-inference/` folder for the output images
 
 ### Evaluating AIR performance on HERIDAL test set (can be slow on CPU)
