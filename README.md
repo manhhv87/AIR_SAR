@@ -63,7 +63,7 @@ If using containers:
 If using native installation:
 - Python 3.6
 - `pip` and `setuptools`
-- FFmpeg (recommended, pip install ffmpeg-python)
+- FFmpeg (recommended, `pip install ffmpeg-python`)
 - Linux or Mac OS (not tested on Windows)
 
 ## Quick install instructions using Docker
