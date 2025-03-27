@@ -6,7 +6,7 @@ scikit-learn
 filterpy==1.4.5
 Pillow
 tensorflow==1.15.5
-keras
+keras==2.3.0
 keras-resnet==0.1.0
 wandb==0.9.5
 cython
