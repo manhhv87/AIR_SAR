@@ -25,11 +25,14 @@ Changes:
 - integration to wandb library
 """
 
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 # For 2x8 core Intel Xeon Gold 6134 @ 3.2GHz processor
 NUM_PARALLEL_EXEC_UNITS = 8
 
 import argparse
-import os
+# import os
 import sys
 import time
 import warnings
