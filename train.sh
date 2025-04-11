@@ -1,22 +1,14 @@
 #!/bin/bash
-if [[ "$1" == "-h" || "$1" == "--help" ]]; then
-  echo 'Usage: bash '$(basename $0)' [DATASET="data/datasets/heridal_keras_retinanet_voc"] [EPOCHS=3] [BACKBONE="resnet152"]'
-  exit 0
-fi
 
 export WANDB_MODE="disabled"
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
-DATASET="${PWD}/data/datasets/heridal_keras_retinanet_voc"
-EPOCHS=3
+DATASET="data/datasets/heridal_keras_retinanet_voc"
+EPOCHS=100
 BACKBONE="resnet50"
 
-DATASET="${1:-$DATASET}"
-EPOCHS="${2:-$EPOCHS}"
-BACKBONE="${3:-$BACKBONE}"
-# use 5564 for real training (show all images per epoch), although it can take long time
-STEPS=3
+STEPS=3   # Use 5564 for real training (show all images per epoch), although it can take long time
 
 python3 keras_retinanet/keras_retinanet/bin/train.py \
     --gpu 0 \
@@ -38,5 +30,6 @@ python3 keras_retinanet/keras_retinanet/bin/train.py \
     --group=retinanet-train-model-selection \
     --tags=model-selection \
     --snapshot_interval=2 \
+    --batch_size=4 \
     pascal \
     $DATASET
