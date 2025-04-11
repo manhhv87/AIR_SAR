@@ -11,4 +11,5 @@ keras-resnet==0.1.0
 wandb==0.9.5
 cython==0.29.14
 h5py==2.10.0
+six==1.11.0
 progressbar2==3.47.0
