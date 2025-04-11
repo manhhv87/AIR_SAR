@@ -48,6 +48,6 @@ def setup_gpu(gpu_id):
             return
 
         os.environ['CUDA_VISIBLE_DEVICES'] = str(gpu_id)
-        config = tf.ConfigProto()
+        config = tf.compat.v1.ConfigProto()
         config.gpu_options.allow_growth = True
-        tf.keras.backend.set_session(tf.Session(config=config))
+        tf.compat.v1.keras.backend.set_session(tf.compat.v1.Session(config=config))
